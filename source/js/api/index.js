@@ -118,7 +118,7 @@ function fetProduxts(options){
   let offset = (parseInt(options['pageNo']) - 1) * (2);
 
   return axios.get(
-      `http://localhost/slim/products/category/${options['category']}/${offset}`)
+      `http://localhost/ecom-api/products/category/${options['category']}/${offset}`)
     .then(function (response) {
       return response;
     })
